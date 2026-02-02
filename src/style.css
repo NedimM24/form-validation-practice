@@ -61,7 +61,8 @@ input:focus:invalid {
 
 /* error message styles */
 .email-error,
-.country-error {
+.country-error,
+.postal-error {
   width: 100%;
   padding: 0;
 
@@ -74,7 +75,8 @@ input:focus:invalid {
 }
 
 .email-error-active,
-.country-error-active {
+.country-error-active,
+.zip-error-active {
   color: #ff0000;
   font-weight: bold;
   font-size: large;
