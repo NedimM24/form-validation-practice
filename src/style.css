@@ -64,7 +64,8 @@ input:focus:invalid {
 .email-error,
 .country-error,
 .postal-error,
-.password-error {
+.password-error,
+.confirm-password-error {
   width: 100%;
   padding: 0;
 
@@ -79,7 +80,8 @@ input:focus:invalid {
 .email-error-active,
 .country-error-active,
 .zip-error-active,
-.password-error-active {
+.password-error-active,
+.confirm-Password-error-active {
   color: #ff0000;
   font-weight: normal;
   font-size: medium;
