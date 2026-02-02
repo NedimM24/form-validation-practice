@@ -10,7 +10,7 @@ form {
   padding: 3rem;
   border-radius: 10px;
   justify-self: center;
-  background-image: linear-gradient(to left, steelblue, rgb(124, 82, 241));
+  background-image: linear-gradient(to left, rgb(136, 180, 216), rgb(165, 148, 212));
   color: white;
   gap: 8px;
 }
@@ -32,11 +32,14 @@ input {
 
 /* Email validation styling */
 
-input[type="email"] {
+input[type="email"],
+input[type="text"],
+input[type="number"],
+input[type="password"] {
   appearance: none;
 
   width: 100%;
-  border: 1px solid #333333;
+  border: none;
   margin: 0;
 
   font-family: inherit;
@@ -47,8 +50,7 @@ input[type="email"] {
 
 /* invalid fields */
 input:invalid {
-  border-color: #990000;
-  background-color: #ffdddd;
+  
 }
 
 input:focus:invalid {
@@ -69,7 +71,7 @@ input:focus:invalid {
 }
 
 .email-error-active{
-    color: #ffdddd;
+    color: #ff0000;
+    font-weight: bold;
     font-size: large;
-    font-weight: bolder;
 }

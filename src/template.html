@@ -7,7 +7,7 @@
   </head>
   <body>
     <form novalidate>
-      <h1>User Form</h1>
+      <h1>Basic Form</h1>
 
       <label for="email">
         <span>Email Address:</span>
@@ -15,17 +15,29 @@
         <span class="email-error" aria-live="polite"></span>
       </label>
 
-      <label for="country">Country:</label>
-      <input type="text" id="country" name="country" />
+      <label for="country">
+        <span>Country:</span>
+        <input type="text" name="country" id="country" required>
+        <span class="country-error" aria-live="polite"></span>
+      </label>
 
-      <label for="Postal Code">Postal Code:</label>
-      <input type="number" id="zip" name="zip" />
+      <label for="Postal Code">
+        <span>Postal Code:</span>
+        <input type="number" id="zip" name="zip" required minlength="5" maxlength="5"/>
+        <span class="postal-error" aria-live="polite"></span>
+      </label>
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" />
+      <label for="password">
+        <span>Password:</span>
+        <input type="password" id="password" name="password" required minlength="8"/>
+        <span class="password-error" aria-live="polite"></span>
+      </label>
 
-      <label for="confirm-password">Confirm Password:</label>
-      <input type="password" id="confirm-password" name="confirm-password" />
+      <label for="confirm-password">
+        <span>Confirm Password:</span>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="8"/>
+        <span class="confirm-password-error" aria-live="polite"></span>
+      </label>
 
       <button id="submit">submit</button>
     </form>
