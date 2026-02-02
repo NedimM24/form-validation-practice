@@ -56,6 +56,7 @@ Each field is validated with custom error messages, ensuring that users input va
  - Confirm Password Validation: Ensures that the password and confirm password fields match.
 
 <img width="792" height="845" alt="image" src="https://github.com/user-attachments/assets/eba23ffe-3d23-46e3-8df5-6595c39b3990" />
+
 **Custom Error Messages**
 
 Each validation rule provides user-friendly error messages that are displayed below the respective fields:
@@ -65,6 +66,7 @@ Each validation rule provides user-friendly error messages that are displayed be
  - Country: "Country field is required."
 
  - Postal Code: "Postal code is required."
+ - Postal Code: "Postal code must be 5 numeric digits."
 
  - Password: "Password must be at least 8 characters."
 
