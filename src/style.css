@@ -10,7 +10,11 @@ form {
   padding: 3rem;
   border-radius: 10px;
   justify-self: center;
-  background-image: linear-gradient(to left, rgb(136, 180, 216), rgb(165, 148, 212));
+  background-image: linear-gradient(
+    to left,
+    rgb(136, 180, 216),
+    rgb(165, 148, 212)
+  );
   color: white;
   gap: 8px;
 }
@@ -27,7 +31,6 @@ input {
   padding: 0.4rem;
   border-radius: 5px;
   border: none;
- 
 }
 
 /* Email validation styling */
@@ -50,7 +53,6 @@ input[type="password"] {
 
 /* invalid fields */
 input:invalid {
-  
 }
 
 input:focus:invalid {
@@ -58,7 +60,8 @@ input:focus:invalid {
 }
 
 /* error message styles */
-.email-error {
+.email-error,
+.country-error {
   width: 100%;
   padding: 0;
 
@@ -70,8 +73,13 @@ input:focus:invalid {
   box-sizing: border-box;
 }
 
-.email-error-active{
-    color: #ff0000;
-    font-weight: bold;
-    font-size: large;
+.email-error-active,
+.country-error-active {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: large;
+}
+
+button:hover {
+  transform: scale(1.05);
 }

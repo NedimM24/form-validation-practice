@@ -20,7 +20,7 @@ export function validateEmail() {
   }
 
   //Event listenter that removes message content if correct input format is followed
-  email.addEventListener("input", (event) => {
+  email.addEventListener("input", () => {
     if (email.validity.valid) {
       emailError.textContent = "";
       emailError.className = "email-error";
@@ -28,7 +28,7 @@ export function validateEmail() {
       showError();
     }
   });
-  
+
   //If the email is invalid once the submit button is clicked, showError()
   form.addEventListener("submit", (event) => {
     if (!email.validity.valid) {
