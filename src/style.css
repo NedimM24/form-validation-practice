@@ -7,6 +7,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 20%;
+
   padding: 3rem;
   border-radius: 10px;
   justify-self: center;
@@ -62,7 +63,8 @@ input:focus:invalid {
 /* error message styles */
 .email-error,
 .country-error,
-.postal-error {
+.postal-error,
+.password-error {
   width: 100%;
   padding: 0;
 
@@ -76,10 +78,11 @@ input:focus:invalid {
 
 .email-error-active,
 .country-error-active,
-.zip-error-active {
+.zip-error-active,
+.password-error-active {
   color: #ff0000;
-  font-weight: bold;
-  font-size: large;
+  font-weight: normal;
+  font-size: medium;
 }
 
 button:hover {
