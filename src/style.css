@@ -1,1 +1,23 @@
 /* style.css */
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 10px;
+    justify-self: center;
+    background-image: linear-gradient(to left, steelblue, rgb(124, 82, 241));
+    color: white;
+    gap: 8px;
+}
+
+#submit{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
