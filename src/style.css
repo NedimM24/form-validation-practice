@@ -21,3 +21,45 @@ form{
     border: none;
     border-radius: 10px;
 }
+
+/* Email validation styling */
+
+input[type="email"] {
+  appearance: none;
+
+  width: 100%;
+  border: 1px solid #333333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+/* invalid fields */
+input:invalid {
+  border-color: #990000;
+  background-color: #ffdddd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* error message styles */
+.email-error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #990000;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.email-error.active {
+  padding: 0.3em;
+}
