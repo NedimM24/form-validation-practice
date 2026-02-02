@@ -1,31 +1,33 @@
 /* style.css */
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    border-radius: 10px;
-    justify-self: center;
-    background-image: linear-gradient(to left, steelblue, rgb(124, 82, 241));
-    color: white;
-    gap: 8px;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 3rem;
+  border-radius: 10px;
+  justify-self: center;
+  background-image: linear-gradient(to left, steelblue, rgb(124, 82, 241));
+  color: white;
+  gap: 8px;
 }
 
-#submit{
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 10px;
+#submit {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
 }
 
-input{
-    padding: .4rem;
-    border-radius: 5px;
-    border: none;
+input {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: none;
+ 
 }
 
 /* Email validation styling */
@@ -59,13 +61,15 @@ input:focus:invalid {
   padding: 0;
 
   font-size: 80%;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #990000;
   border-radius: 0 0 5px 5px;
 
   box-sizing: border-box;
 }
 
-.email-error.active {
-  padding: 0.3em;
+.email-error-active{
+    color: #f9f9f9;
+    font-size: large;
+    font-weight: bolder;
 }
