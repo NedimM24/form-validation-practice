@@ -22,6 +22,12 @@ form{
     border-radius: 10px;
 }
 
+input{
+    padding: .4rem;
+    border-radius: 5px;
+    border: none;
+}
+
 /* Email validation styling */
 
 input[type="email"] {
