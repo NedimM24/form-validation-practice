@@ -61,13 +61,15 @@ Each field is validated with custom error messages, ensuring that users input va
 
 Each validation rule provides user-friendly error messages that are displayed below the respective fields:
 
- - Email: "Please enter a valid email address."
+ - Email: "You need to enter an email address."
+ - Email: "Entered value must be an email address."
 
- - Country: "Country field is required."
+ - Country: "You need to enter a country."
 
- - Postal Code: "Postal code is required."
+ - Postal Code: "You need to enter a Postal Code."
  - Postal Code: "Postal code must be 5 numeric digits."
 
+ - Password: "You need to enter a password."
  - Password: "Password must be at least 8 characters."
 
  - Confirm Password: "Passwords must match."
